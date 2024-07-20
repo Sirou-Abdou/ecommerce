@@ -34,11 +34,11 @@ const slides = [
 const Slider = () => {
   const [current, setCurrent] = useState(0);
 
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//         setCurrent((prev) => prev === slides.length - 1 ? 0 : prev + 1)
-//     }, 3000)
-//   },[])
+  //   useEffect(() => {
+  //     const interval = setInterval(() => {
+  //         setCurrent((prev) => prev === slides.length - 1 ? 0 : prev + 1)
+  //     }, 3000)
+  //   },[])
 
   return (
     <div className="h-[calc(100vh-80px)] overflow-hidden">
@@ -65,7 +65,7 @@ const Slider = () => {
               </Link>
             </div>
             {/* IMAGE CONTAINER */}
-            <div className="h-1/2 xl:w-1/2 relative">
+            <div className="h-1/2 xl:w-1/2 xl:h-full relative">
               <Image
                 src={slide.img}
                 alt=""
